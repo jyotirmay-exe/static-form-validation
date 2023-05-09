@@ -27,12 +27,14 @@ function Submission()
 function error(element)
 {
     element.style.borderColor='red';
+    element.style.boxShadow="1px 1px 10px rgb(102, 0, 0)";
     // element.parentElement.style.color="red";
 }
 
 function valid(element)
 {
     element.style.borderColor="";
+    element.style.boxShadow="";
 }
 
 function checkName()
