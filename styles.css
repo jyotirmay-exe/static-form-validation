@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#396bc9fe,#2eb169fe);
+}
+
+.container{
+    max-width: 700px;
+    width: 90%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 12px #8a8a8a, 3px 3px 13px rgb(53, 53, 53);
+}
+
+.container .header{
+    font-size: 28px;
+    font-weight: 900;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.container .header::before{
+    content: "";
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 3px;
+    width: 250px;
+    background-color: #31106e;
+}
+
+.container form .form-area{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .form-area .input-field{
+    margin: 10px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.form-area .input-field .details{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.form-area .input-field .showpass, .form-area .input-field .showpass *{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form-area .input-field input{
+    background-color: #fff;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    height: 45px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.form-area .input-field input:focus{
+    border-color: rgb(0, 225, 255);
+    box-shadow: 1px 1px 10px rgb(102, 177, 187);
+}
+
+.container form .button{
+    display: flex;
+    justify-content: center;
+}
+
+form .button input{
+    height: 100%; width: 50%;
+    margin: 20px;
+    margin-bottom: 0px;
+    outline: none;
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgb(70, 102, 82), rgb(44, 73, 107));
+    font-size: 20px;
+    color: rgb(167, 167, 167);
+    font-weight: 900;
+    padding: 5px;
+    box-shadow: inset 2px 2px 12px #000;
+    /* box-shadow: 2px 2px 12px #000; */
+}
+
+@media (max-width:990px) {
+    .input-field { flex-basis: 100%; }
+}

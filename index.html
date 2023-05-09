@@ -11,11 +11,11 @@
 <body>
     <div class="container">
        <div class="header">Registration Form</div>
-       <form action="#">
+       <form action="#" onsubmit="Submission()">
         <div class="form-area">
             <div class="input-field">
                 <span class="details">Full Name</span>
-                <input type="text" placeholder="Enter your full name" onfocusout="checkName()" id="name" required>
+                <input type="text" placeholder="Enter your full name" onChange="checkName()" id="name" required>
             </div>
             <div class="input-field">
                 <span class="details">Username</span>
@@ -23,20 +23,20 @@
             </div>
             <div class="input-field">
                 <span class="details">Email</span>
-                <input type="email" placeholder="Enter a valid Email-ID" onfocusout="checkEmail()" id="email" required>
+                <input type="email" placeholder="Enter a valid Email-ID" onChange="checkEmail()" id="email" required>
             </div>
             <div class="input-field">
                 <span class="details">Mobile Number</span>
-                <input type="text" placeholder="Enter your Mobile Number" onfocusout="checkMobile()" id="mob" required>
+                <input type="text" placeholder="Enter your Mobile Number" onChange="checkMobile()" id="mob" required>
             </div>
             <div class="input-field">
                 <span class="details">Password</span>
                 <span class="showpass" onclick="showPass()">&nbsp;<i class="bi bi-eye-slash" id="togglePassword"></i></span>
-                <input type="password" id="pass" placeholder="Enter password" onfocusout="checkPass()" required>
+                <input type="password" id="pass" placeholder="Enter password" onChange="checkPass()" required>
             </div>
             <div class="input-field">
                 <span class="details">Confirm Password</span>
-                <input type="password" id="confirmpass" placeholder="Re-enter the Password" onfocusout="checkConfirm()" required>
+                <input type="password" id="confirmpass" placeholder="Re-enter the Password" onChange="checkConfirm()" required>
             </div>
         </div>
         <div class="button">
